@@ -27,10 +27,10 @@ function AddPost() {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="grid grid-cols-3 gap-4 h-180 place-content-center bg-white">
       <div className="col-span-3 flex flex-col items-center space-y-4 border border-black p-4 rounded-md text-pink-700">
         <input
-          className="w-full p-2 border border-gray-400 rounded-md text-white"
+          className="w-full p-2 border border-gray-400 rounded-md text-black"
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
           placeholder="Enter a new post"

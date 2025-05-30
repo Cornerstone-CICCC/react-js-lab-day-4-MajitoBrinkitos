@@ -5,7 +5,7 @@ function BlogList() {
   const { posts } = usePostStore();
 
   return (
-    <div className="max-w-3xl mx-auto p-6">
+    <div className="grid grid-cols-3 gap-4 h-180 place-content-center bg-white">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Blog Posts</h1>
         <Link to="/blog/new">
