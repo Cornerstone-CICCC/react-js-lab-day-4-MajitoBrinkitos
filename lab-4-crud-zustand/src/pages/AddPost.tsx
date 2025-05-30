@@ -30,7 +30,7 @@ function AddPost() {
     <div className="flex justify-center">
       <div className="col-span-3 flex flex-col items-center space-y-4 border border-black p-4 rounded-md text-pink-700">
         <input
-          className="w-full p-2 border border-gray-400 rounded-md text-black"
+          className="w-full p-2 border border-gray-400 rounded-md text-white"
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
           placeholder="Enter a new post"
@@ -43,7 +43,7 @@ function AddPost() {
           Add Post
         </button>
 
-        <ul className="w-full mt-4 list-disc pl-4">
+        <ul className="w-full mt-4 pl-4">
           {posts.map((post) => (
             <li key={post.id} className="border border-white p-2 rounded-md">
               {editingTask === post.id ? (

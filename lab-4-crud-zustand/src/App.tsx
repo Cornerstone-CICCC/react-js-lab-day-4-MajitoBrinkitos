@@ -4,6 +4,7 @@ import AddPost from './pages/AddPost';
 import BlogList from './pages/BlogList';
 import BlogDetail from './pages/BlogDetail';
 import EditPost from './pages/EditPost';
+import Navbar from './components/Navbar';
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog/new" element={<AddPost />} />
